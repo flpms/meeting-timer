@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Meeting Timer
+
+This project want to facilitate to cronometer meetings and track it into a google spreadsheet
+
+## For Development 
 
 ## Available Scripts
 
