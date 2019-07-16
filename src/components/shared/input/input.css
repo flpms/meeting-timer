@@ -3,7 +3,7 @@
   height: auto;
 }
 
-.input .label {
+.input label {
   color: rgba(0, 0, 0, .8);
   cursor: default;
   font-size: 1rem;   
@@ -18,31 +18,32 @@
 .input .text {
   border: 0.063rem solid rgba(0, 0, 0, .8);
   border-radius: 0.5rem; 
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   height: 2.34rem;
   margin: -0.063rem;
   padding: 0 .5rem;
   width: 100%;
 }
 
-.input .script-label-hover, .input .label:hover {
+.input.add-label-effect, .input label:hover {
   transition: color .5s linear;
   color: rgba(0, 0, 0, .1);
 }
 
 .input .text:focus {
-  
   outline: none;
 }
 
-.input .label:hover, .input .text:hover {
+.input label:hover, .input .text:hover {
   transition: border .5s linear;
   border-color: rgba(0, 0, 0, .1);
   outline: none;
 }
 
-.input .script-label-active, .input .label:active, .input .text:active {
+.input .script-label-active, 
+.input .label:active, 
+.input .text:active {
   color: rgba(0, 0, 0, 1);
-  border-color: rgba(0, 0, 0, .1);
+  border-color: rgba(0, 0, 0, 1);
   outline: none;
 }

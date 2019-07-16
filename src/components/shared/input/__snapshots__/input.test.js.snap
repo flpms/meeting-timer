@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input [snapshot] input when hovered 1`] = `
+<div
+  className="input"
+>
+  <label
+    htmlFor="theme"
+  >
+    Theme
+  </label>
+  <input
+    className="text"
+    id="theme"
+    onChange={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    type="text"
+    value=""
+  />
+</div>
+`;
+
+exports[`Input [snapshot] input when hovered 2`] = `
+<div
+  className="input add-label-effect"
+>
+  <label
+    htmlFor="theme"
+  >
+    Theme
+  </label>
+  <input
+    className="text"
+    id="theme"
+    onChange={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    type="text"
+    value=""
+  />
+</div>
+`;
+
+exports[`Input [snapshot] input when hovered 3`] = `
+<div
+  className="input"
+>
+  <label
+    htmlFor="theme"
+  >
+    Theme
+  </label>
+  <input
+    className="text"
+    id="theme"
+    onChange={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    type="text"
+    value=""
+  />
+</div>
+`;

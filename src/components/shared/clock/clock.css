@@ -1,0 +1,10 @@
+.clock {
+  font-size: 1.8rem;
+  height: auto;
+  margin: .5rem 1rem;
+  text-align: center;
+}
+
+.clock .overflow-time {
+  color: red;
+}

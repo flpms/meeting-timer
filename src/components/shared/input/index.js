@@ -8,12 +8,16 @@ class InputTextContainer extends Component {
     
     this.state = { 
       value: '', 
-      hoverState: 'label'
+      hover: false,
     };
     
-    this.onChange = this.onChange.bind(this);
-    this.onMouseEnter = this.onMouseEnter.bind(this);
-    this.onMouseLeave = this.onMouseLeave.bind(this);
+    this.binder('onChange');
+    this.binder('onMouseEnter');
+    this.binder('onMouseLeave');
+  }
+
+  binder(action) {
+    this[action] = this[action].bind(this);
   }
 
   onChange(key, event) {
@@ -22,18 +26,25 @@ class InputTextContainer extends Component {
   }
 
   onMouseEnter() {
-    this.setState({ hoverState: 'label script-label-hover' });
+    this.setState({ hover: true });
   }
 
   onMouseLeave() {
-    this.setState({ hoverState: 'label' });
+    this.setState({ hover: false });
   }
 
   render() {
+    let className = 'input';
+
+    if (this.state.hover) {
+      className += ' add-label-effect';
+    }
+
     return (
-      <div className="input">
-        <label className={ this.state.hoverState }
-           htmlFor={this.props.keyId}>{this.props.label}</label>
+      <div className={className}>
+        <label htmlFor={this.props.keyId}>
+          {this.props.label}
+        </label>
         <input className="text"
           type="text"
           id={this.props.keyId }
